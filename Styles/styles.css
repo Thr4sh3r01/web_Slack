@@ -3,8 +3,8 @@
   src: url(../../Fonts/Circular/CircularStd-Medium.otf);
 }
 body {
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 70px;
+  margin-left: 70px;
   font-family: circular;
   background-color: #541554;
 }
@@ -18,6 +18,9 @@ header {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+}
+header .chevron-down {
+  width: 5px;
 }
 header .logo {
   width: 100px;
@@ -52,18 +55,20 @@ header .prueba a {
   margin: 0 10px;
 }
 header .prueba button.button1 {
+  font-family: circular;
   background-color: #541554;
   color: white;
   border: 1px solid white;
-  padding: 14px;
+  padding: 12px;
   margin: 0 10px;
   border-radius: 5px;
 }
 header .prueba button.button2 {
+  font-family: circular;
   background-color: white;
   color: #541554;
   border: 1px solid #541554;
-  padding: 14px;
+  padding: 12px;
   margin: 0 10px;
   border-radius: 5px;
 }
@@ -73,7 +78,7 @@ header .menu-toggle {
   color: white;
   cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
   header .menu {
     display: none;
   }
