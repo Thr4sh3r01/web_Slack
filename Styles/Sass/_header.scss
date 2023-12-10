@@ -1,0 +1,114 @@
+$margin-principal: 20px;
+
+
+header {
+    background-color: #541554;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    .logo {
+      width: 100px;
+    }
+
+    .logo, .menu, .prueba {
+        display: flex;
+        align-items: center;
+      }
+      
+      .menu {
+        margin-left: 10px;
+      }
+      
+      .menu nav {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .menu nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+      }
+      
+      .menu nav .new-link {
+        display: none; /* Ocultar nuevos enlaces por defecto */
+      }
+      
+      .prueba {
+        display: flex;
+      }
+      
+      .prueba a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+      }
+      
+      .prueba button.button1 {
+        background-color: #541554;
+        color: white;
+        border: 1px solid white;
+        padding: 14px;
+        margin: 0 10px;
+        border-radius: 5px;
+      }
+      
+      .prueba button.button2 {
+        background-color: white;
+        color: #541554;
+        border: 1px solid #541554;
+        padding: 14px;
+        margin: 0 10px;
+        border-radius: 5px;
+
+      }
+      
+      .menu-toggle {
+        display: none;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+
+    @media only screen and (max-width: 600px) {
+    .menu {
+      display: none;
+    }
+  
+    .prueba {
+      display: none; /* Ocultar div prueba */
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-open .menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #541554;
+    }
+  
+    .menu-open .menu nav a {
+      margin: 10px;
+      display: block; /* Mostrar nuevos enlaces en columnas */
+    }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+@font-face {
+  font-family: circular;
+  src: url(../../Fonts/Circular/CircularStd-Medium.otf);
+}
+body {
+  margin-right: 120px;
+  margin-left: 120px;
+  font-family: circular;
+  background-color: #541554;
+}
+
+header {
+  background-color: #541554;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+header .logo {
+  width: 100px;
+}
+header .logo, header .menu, header .prueba {
+  display: flex;
+  align-items: center;
+}
+header .menu {
+  margin-left: 10px;
+}
+header .menu nav {
+  display: flex;
+  justify-content: center;
+}
+header .menu nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+header .menu nav .new-link {
+  display: none; /* Ocultar nuevos enlaces por defecto */
+}
+header .prueba {
+  display: flex;
+}
+header .prueba a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+header .prueba button.button1 {
+  background-color: #541554;
+  color: white;
+  border: 1px solid white;
+  padding: 14px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+header .prueba button.button2 {
+  background-color: white;
+  color: #541554;
+  border: 1px solid #541554;
+  padding: 14px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+header .menu-toggle {
+  display: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  header .menu {
+    display: none;
+  }
+  header .prueba {
+    display: none; /* Ocultar div prueba */
+  }
+  header .menu-toggle {
+    display: block;
+  }
+  header .menu-open .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #541554;
+  }
+  header .menu-open .menu nav a {
+    margin: 10px;
+    display: block; /* Mostrar nuevos enlaces en columnas */
+  }
+}/*# sourceMappingURL=styles.css.map */
