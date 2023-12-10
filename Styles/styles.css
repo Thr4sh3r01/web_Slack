@@ -40,7 +40,7 @@ header .menu nav a {
   margin: 0 10px;
 }
 header .menu nav .new-link {
-  display: none; /* Ocultar nuevos enlaces por defecto */
+  display: none; /* Ocultar enlaces de hamburguesa */
 }
 header .prueba {
   display: flex;
@@ -94,6 +94,6 @@ header .menu-toggle {
   }
   header .menu-open .menu nav a {
     margin: 10px;
-    display: block; /* Mostrar nuevos enlaces en columnas */
+    display: block; /* Mostrar nuevos enlaces */
   }
 }/*# sourceMappingURL=styles.css.map */
