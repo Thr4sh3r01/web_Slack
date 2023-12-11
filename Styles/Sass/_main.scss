@@ -8,6 +8,7 @@ main {
     flex-wrap: nowrap;
     justify-content: center;
 
+
      .text-marketing {
         float: left;
         
@@ -17,7 +18,7 @@ main {
      }
 
      .video_marketing {
-        width: 600px;
+        width: 700px;
         margin-right: 19px;
      }
 
@@ -53,12 +54,25 @@ main {
         color: white;
         border-style: none;
         border-radius: 5px;
-     }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-     .logo_google {
+    .logo_google {
         width: 35px;
      }
+
+     a {
+        text-decoration: none;
+     }
 }
+
+     
+
 
 
 
