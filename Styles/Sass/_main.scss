@@ -1,0 +1,66 @@
+main {
+    margin: 0px;
+    padding: 15px;
+    color: #333;
+    background-color: #541554;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+     .text-marketing {
+        float: left;
+        
+     }
+     .video {
+        float: right;
+     }
+
+     .video_marketing {
+        width: 600px;
+        margin-right: 19px;
+     }
+
+     h1 {
+        color: white;
+        font-size: 35px;
+     }
+
+     span {
+        color: #ecb22e;
+        font-size: 39px;
+     }
+
+     p {
+        color:white;
+        font-size: 18px;
+     }
+
+     /* BOTONES */
+
+     .boton_1 {
+        padding: 20px;
+        width: 600px;
+        border-radius: 5px;
+        border-style: none;
+     }
+
+     .boton_2 {
+        margin-top: 8px;
+        padding: 10px;
+        width: 600px;
+        background-color: #4585F4;
+        color: white;
+        border-style: none;
+        border-radius: 5px;
+     }
+
+     .logo_google {
+        width: 35px;
+     }
+}
+
+
+
+
+
